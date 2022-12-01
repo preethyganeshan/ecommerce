@@ -1,0 +1,12 @@
+/\.idea/
+*\.pyc
+__pycache__/
+/venv/
+/nohup.out
+/ebay_web/media
+/ebay_web/eBay_Oauth_log.txt
+/ebay_web/eBay_Oauth_log.txt
+/deployment/logs
+/ebay_web/envs
+.env
+env
