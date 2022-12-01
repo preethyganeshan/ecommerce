@@ -6,7 +6,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">  
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="/shop">Home</a>
           </li>
           <li class="nav-item dropdown {% if 'ShoppingApp' in request.path %} active {% endif %}">
 
@@ -24,7 +24,7 @@
           </li>
           {% if item_count > 0 %}
           <li class="nav-item">
-            <a class="nav-link" href=""><i class="fa fa-shopping-cart"></i></a>
+            <a class="nav-link" href="{% url 'cart:cart_detail' %}"><i class="fa fa-shopping-cart"></i>{{item_count}}</a>
           </li>
           {% endif %}
         </ul>
